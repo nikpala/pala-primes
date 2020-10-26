@@ -22,12 +22,12 @@ Please refer to the swagger.json file to get detailed information about the endp
 
 To run the service locally -
 
-gradle clean build bootRun
+mvn clean compile spring-boot:run
 
-Pre-requisite : Please ensure you have Java 8 & Gradle 4.10 or above version installed.
+Pre-requisite : Please ensure you have Java 8 & Maven 3.6.3 or above version installed.
 
-This service has also been deployed to Google Cloud Platform. You can access the service at ->
-https://prime-number-generator.appspot.com/primes/{n}
+This service has also been deployed to Microsoft Azure. You can access the service at ->
+https://palaprimes.azurewebsites.net/primes/{n}
 
 Kindly note below -
 
@@ -37,7 +37,7 @@ Kindly note below -
 
 Some sample test URLs ->
 
-1. https://prime-number-generator.appspot.com/primes/20?algorithm=sundaram
-2. https://prime-number-generator.appspot.com/primes/200?algorithm=atkins
-3. https://prime-number-generator.appspot.com/primes/20?algorithm=eratoshenes
-4. https://prime-number-generator.appspot.com/primes/2000
+1. https://palaprimes.azurewebsites.net/primes/20?algorithm=sundaram
+2. https://palaprimes.azurewebsites.net/primes/200?algorithm=atkins
+3. https://palaprimes.azurewebsites.net/primes/20?algorithm=eratoshenes
+4. https://palaprimes.azurewebsites.net/primes/2000

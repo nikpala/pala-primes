@@ -27,7 +27,7 @@ mvn clean compile spring-boot:run
 Pre-requisite : Please ensure you have Java 8 & Maven 3.6.3 or above version installed.
 
 This service has also been deployed to Microsoft Azure. You can access the service at ->
-https://palaprimes.azurewebsites.net/primes/{n}
+https://palaprimesdocker.azurewebsites.net/primes/{n}
 
 Kindly note below -
 
@@ -37,7 +37,7 @@ Kindly note below -
 
 Some sample test URLs ->
 
-1. https://palaprimes.azurewebsites.net/primes/20?algorithm=sundaram
-2. https://palaprimes.azurewebsites.net/primes/200?algorithm=atkins
-3. https://palaprimes.azurewebsites.net/primes/20?algorithm=eratoshenes
-4. https://palaprimes.azurewebsites.net/primes/2000
+1. https://palaprimesdocker.azurewebsites.net/primes/20?algorithm=sundaram
+2. https://palaprimesdocker.azurewebsites.net/primes/200?algorithm=atkins
+3. https://palaprimesdocker.azurewebsites.net/primes/20?algorithm=eratoshenes
+4. https://palaprimesdocker.azurewebsites.net/primes/2000

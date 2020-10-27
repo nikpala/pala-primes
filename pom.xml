@@ -13,6 +13,12 @@
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
 
+  <properties>
+    <jib-maven-plugin.version>2.5.2</jib-maven-plugin.version>
+    <docker.image.prefix>palaprimes.azurecr.io</docker.image.prefix>
+    <java.version>1.8</java.version>
+  </properties>
+
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -105,6 +111,19 @@
               </resource>
             </resources>
           </deployment>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>jib-maven-plugin</artifactId>
+        <groupId>com.google.cloud.tools</groupId>
+        <version>${jib-maven-plugin.version}</version>
+        <configuration>
+          <from>
+            <image>mcr.microsoft.com/java/jre:8-zulu-alpine</image>
+          </from>
+          <to>
+            <image>${docker.image.prefix}/${project.artifactId}</image>
+          </to>
         </configuration>
       </plugin>
     </plugins>
